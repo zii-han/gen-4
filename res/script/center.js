@@ -17,8 +17,8 @@ searchForm.addEventListener('keypress', function(event) {
       }
     });
     
-searchForm.addEventListener('keypress', function(event) {
-   if (event.key === '/') {
+  addEventListener('keypress', function(event) {
+   if (event.key === "/") {
      searchForm.classList.toggle("active");
      searchBox.focus();
      e.preventDefault();
