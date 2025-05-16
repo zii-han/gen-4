@@ -73,10 +73,7 @@ function search() {
     }
   }
 
-  // Jika tidak ditemukan murid dengan nama yang sesuai
-  alert(input + " tidak dapat ditemukan");
-  sound2();
-  clear();
+  check();
   return;
 }
 
