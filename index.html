@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Angkatan 4</title>
+  
+  <!-- Audio -->
+  <audio src="res/sound/gabolehtoxic.mp3" id="sound"></audio>
+  <audio src="res/sound/alert.mp3" id="sound1"></audio>
+  <audio src="res/sound/eh-eh-ehhhh.mp3" id="sound2"></audio>
+ 
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+  
+  <!-- icon web -->
+  <link rel="icon" href="res/img/gen/gen-4/gen-4.jpg">
+
+  <!-- My Style -->
+  <link rel="stylesheet" href="res/style/style.css">
+</head>
+
+<body onload="userin();">
+
+  <!-- Navbar start -->
+  <nav class="navbar">
+    <a href="#" class="navbar-logo"><span>Generasi</span> An Najah</a>
+
+    <div class="navbar-nav">
+      <a href="#home">Home</a>
+      <a href="#about">Tentang Kami</a>
+      <a href="#murid">Kami</a>
+      <a href="album.html">Album</a>
+    </div>
+
+    <div class="navbar-extra">
+     <!-- Pencarian -->
+      <a id="search-button"><i data-feather="search"></i></a>
+      
+     <!-- Menu -->
+      <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+    </div>
+
+    <!-- Pencarian start -->
+    <div class="search-form">
+      <input type="search" id="search-box" placeholder="Cari...">
+      <div onclick="search()">
+        <label for="search-box"><i data-feather="search"></i></label>
+      </div>
+    </div>
+    <!-- Pencarian end -->
+
+  </nav>
+  <!-- Navbar end -->
+
+  <!-- Landing Section start -->
+  <section class="landing" id="home">
+    <div class="css-masking">
+      <main class="motto">
+        <h1>Bersama kita hafalkan <span> Al-Qur'an</span></h1>
+        <p>Generasi An Najah</p>
+      </main>
+    </div>
+  </section>
+  <!-- Landing Section end -->
+
+  <!-- About Section start -->
+  <section id="about" class="about">
+    <h2><span>Tentang</span> Kami</h2>
+
+    <div class="container">
+      <div class="about-img">
+        <img class="about-2" src="res/img/tentang-kami.jpg" alt="Tentang Kami">
+      </div>
+      <div class="motto">
+        <h3>Angkatan 4<span> Generasi An Najah</span></h3>
+        <p>
+          Kami merupakan Angkatan ke 4 Dari SMPIT Madinah Al Fatih(2023-2025)
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- About Section end -->
+
+  <!-- murid Section start -->
+  <section class="murid" id="murid">
+    <h2>Alumni <span> Generasi An Najah</span></h2>
+    <h4><span> Soleh</span></h4>
+    
+    <div class="container" id="murid-container"></div>
+      
+    </div>
+    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo unde eum, ab fuga possimus iste.</p> -->
+  </section>
+  <!-- murid Section end -->
+
+  <!-- Footer start -->
+  <footer>
+    <div class="socials">
+      <a href="https://www.instagram.com/smpitmafa/"><i data-feather="instagram"></i></a>
+      <a href="https://www.facebook.com/smpit.madinahalfatih.7/"><i data-feather="facebook"></i></a>
+      <a href="https://www.youtube.com/channel/UCeCd1cketh7D8R_fVw-udJg"><i data-feather="youtube"></i></a>
+    </div>
+
+    <div class="links">
+      <a href="#home">Home</a>
+      <a href="#about">Tentang Kami</a>
+      <a href="#murid">Kami</a>
+    </div>
+
+    <div class="credit">
+      <p>Created by <a href="https://github.com/zii-han">zii-han</a>. | &copy; 2024.</p>
+    </div>
+  </footer>
+  <!-- Footer end -->
+
+  <!-- Feather Icons -->
+  <script>
+    feather.replace()
+  </script>
+
+  <!-- My Javascript -->
+  <script>
+    document.addEventListener("contextmenu", function (event) {
+            event.preventDefault();
+            alert("Tidak bisa klik kanan");
+        });
+  </script>
+  <script src="res/script/center.js"></script>
+  <script src="res/script/script.js"></script>
+  <script src="res/script/weblog.js"></script>
+  <script src="res/script/sound.js"></script>
+  <script src="res/script/similaritiescheck.js"></script>
+  <script src="fetch.js"></script>
+  <script src="data.json"></script>
+</body>
+
+</html>
