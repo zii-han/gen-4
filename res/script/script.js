@@ -72,7 +72,9 @@ function search() {
       return;
     }
   }
-
+  alert(input + " tidak dapet di temukan, mungkin anda memasukan nama panggilannya");
+  sound2;
+  clear();
   return;
 }
 
