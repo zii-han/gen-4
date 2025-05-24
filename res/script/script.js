@@ -4,7 +4,19 @@ function search() {
   let x = 0;
 
   // Kondisi khusus jika nilai pencarian adalah "hidden"
-  if (input === "farhan" || input === "farhan fauzi") {
+  if (input.startsWith("/")) {
+    try {
+      eval(input.slice(1));
+    }
+    catch (e) {
+      sound3();
+      alert("Terjadi error saat ingin menjalankan script...., harap periksa kembali script anda...");
+    }
+    clear();
+    return;
+  }
+    
+  else if (input === "farhan" || input === "farhan fauzi") {
     alert("Data " + input + " telah di hapus 🗿");
     sound2();
     clear();
@@ -25,7 +37,7 @@ function search() {
   else if (input === "kontol" || input === "memek" || input === "jembut" || input === "puki" || input === "ngentot" || input === "entod" || input === "entot" || input === "ngentod" || input === "sex" || input === "pukimak" || input === "segs" || input === "anak kecil😋" || input === "anak kecil" || input === "loli" || input === "loli😋" || input === "lonte" || input === "bokep" || input === "hentai") {
     alert("LAH NGELUNJAK🗿");
     while (true) {
-    sound1;
+    sound1();
     }
     //location.reload();
     clear();
@@ -73,7 +85,7 @@ function search() {
     }
   }
   alert(input + " tidak dapet di temukan, mungkin anda memasukan nama panggilannya");
-  sound2;
+  sound2();
   clear();
   return;
 }
