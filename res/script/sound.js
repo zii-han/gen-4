@@ -18,3 +18,7 @@ function sound1() {
 function sound2() {
     playSound("sound2");
 }
+
+function sound3() {
+    playSound("sound3");
+}
