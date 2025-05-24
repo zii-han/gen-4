@@ -283,6 +283,10 @@ body {
   height: 25rem;
 }
 
+.murid .murid-image:hover img {
+  height: 205rem;
+}
+
 .murid .murid-content h3 {
   font-size: 2rem;
 }
